@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  background-color: #EFF6FF;
+  color: #2A4A5C;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  flex: 1;
+  background-color: #EFF6FF;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  flex: 1;
+  background: #FFFFFF;
+  padding: 60px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #7B8A92;
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  color: #96A5B1;
+  margin-bottom: 30px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  flex: 1;
+}
+
+button.facebook { background: #255A9B; }
+button.linkedin { background: #0076B6; }
+button.create-account { background: #3698FB; width: 100%; margin-top: 20px; }
+
+button:hover { opacity: 0.9; }
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #AFAFAF;
+  position: relative;
+}
+
+.divider span {
+  background: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #EEEEEE;
+  z-index: 0;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  color: #2A4A5C;
+}
+
+.input-group input::placeholder {
+  color: #AFAFAF;
+}
+
+h2 {
+  font-size: 18px;
+  color: #7B8A92;
+  margin: 20px 0 5px;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #96A5B1;
+  margin-bottom: 15px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.hint {
+  font-size: 13px;
+  color: #AFAFAF;
+  border: 1px solid #EEEEEE;
+  padding: 10px;
+  border-radius: 4px;
+  background: #FAFAFA;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  font-size: 13px;
+  color: #AFAFAF;
+  margin-bottom: 20px;
+}
+
+.checkbox a {
+  color: #3698FB;
+  text-decoration: none;
+}
